@@ -1,0 +1,74 @@
+# ==============================
+# Laravel .gitignore
+# ==============================
+
+# ---------- Dependencies ----------
+/vendor
+/node_modules
+
+# ---------- Environment ----------
+.env
+.env.backup
+.env.production
+
+# ---------- Laravel Storage ----------
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+
+# ---------- Compiled / Build Assets ----------
+/public/css/app.css
+/public/js/app.js
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# ---------- Uploaded Images ----------
+/public/images/*
+!/public/images/noImage.jpg
+/public/images/photoProfile/*
+!/public/images/photoProfile/boy.png
+
+# ---------- IDE / Editor ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+nbproject/
+
+# ---------- OS Generated ----------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# ---------- PHP ----------
+*.cache
+*.log
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# ---------- NPM / Yarn ----------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------- Lock files (optional) ----------
+# Uncomment if you don't want to track lock files:
+# composer.lock
+# package-lock.json
+
+# ---------- Misc ----------
+Homestead.json
+Homestead.yaml
+auth.json
+.vagrant
